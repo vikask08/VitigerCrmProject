@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegionalRegrassion">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.crm.comcast.orgtest.OrganizationTest">
+      <methods>
+               <include name="createOrgTest"/>
+            </methods>
+      </class>
+      
+      <class name="com.crm.comcast.ContactTest.ContactTests">
+      <methods>
+               <include name="createContactWithOrgTest"/>
+            </methods>
+      </class>
+    </classes>
+  </test> 
+</suite>
